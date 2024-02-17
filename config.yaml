@@ -1,0 +1,18 @@
+
+# Config Example of URL Shortener
+
+server:
+  host: 0.0.0.0
+  port: 5000
+  gzip: # optional
+    level: 5
+  throttle: # optional
+    rate: 10
+    burst: 30
+    expires_in: 3m
+  
+# public_dir: /http/public # optional
+
+data: /url-shortener/data
+
+debug: true # optional

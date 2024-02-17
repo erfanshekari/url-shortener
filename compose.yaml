@@ -1,0 +1,13 @@
+version: "3"
+
+
+services:
+  url-shortener:
+    image: erfanshekari/url-shortener:latest
+    container_name: url-shortener
+    command: -c /url-shortener/config.yaml
+    ports:
+      - 5000:5000
+    volumes:
+      - ./data:/url-shortener/data
+      - ./config.yaml:/url-shortener/config.yaml
