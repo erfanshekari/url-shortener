@@ -1,0 +1,291 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto !important;
+}
+
+input {
+  font-family: Roboto;
+}
+
+div.root {
+  height: 100vh;
+  padding: 0 48px;
+  background-color: #fff;
+}
+
+div.container {
+  width: 100%;
+  max-width: 1220px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+div.form {
+  box-shadow: 0px 1px 15px 0px #64636314;
+  display: flex;
+  gap: 14px;
+  padding: 15px 25px 15px 25px;
+  direction: ltr;
+}
+
+div.target_url_container {
+  background-color: blanchedalmond;
+  margin-top: 16px;
+  border-radius: 16px;
+  cursor: copy;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.copy_icon {
+  width: 16px;
+}
+
+img.submit-icon {
+  width: 18px;
+  height: 14.63px;
+}
+
+h1.form-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 44.8px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+div.input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+div.input-url {
+  border: 1px solid #e6e8ea;
+  border-radius: 4px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  position: relative;
+}
+
+div.input-url > label {
+  position: absolute;
+  left: 12px;
+  top: -10px;
+  background: #fff;
+  color: #474d57;
+  padding: 0 2px;
+}
+
+div.input-url > span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 38px;
+  white-space: nowrap;
+}
+
+img.link-icon {
+  width: 24px;
+  height: 12px;
+}
+
+div.input-url > input {
+  color: #474d57;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 12px;
+  direction: ltr;
+}
+
+div.input-url > input:focus-visible {
+  outline: 0;
+}
+
+div.btn-submit {
+  border-radius: 4px;
+  background-color: #69d7e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 57px;
+  width: 190px;
+  padding-right: 18px;
+  padding-left: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+div.btn-submit:hover {
+  box-shadow: 0 15px 25px #69d7e2;
+}
+
+div.btn-submit > p {
+  color: #1e2329;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  width: 51px;
+}
+
+img.close-icon {
+  cursor: pointer;
+}
+
+div.form-row2 {
+  padding: 0 16px;
+  display: flex;
+  color: #1e2329;
+  width: 100%;
+}
+
+span.target-link-title {
+  color: #474d57;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  border-right: 1px solid #e6e8ea;
+  padding: 0 8px;
+}
+
+div.target-link {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1e2329;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.copy-icon-box {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.copy-icon-box:hover {
+  background-color: #f5f5f5;
+}
+
+p.caption {
+  margin: 0 25px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #707a8a;
+}
+
+img.copy-icon {
+  width: 21px;
+  height: 24px;
+}
+
+.navbar {
+  width: 100%;
+  display: block;
+  height: 59px;
+  margin-top: 30px;
+}
+
+span.error {
+  font-size: 14px;
+  color: rgb(217, 48, 37);
+  line-height: 20px;
+  display: none;
+}
+
+div.sm-target-link-container {
+  display: none;
+}
+
+div.sm-target-link {
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+div.sm-target-link-container > span.target-link-title {
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  div.root {
+    padding: 0 64px;
+  }
+
+  header {
+    padding: 10px 110px 0px 110px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1.form-title {
+    font-size: 28px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.form {
+    flex-direction: column;
+  }
+
+  div.btn-submit {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.root {
+    padding: 0 16px;
+  }
+
+  h1.form-title {
+    font-size: 16px;
+  }
+
+  div.output {
+    display: none;
+  }
+
+  span.target-link-title {
+    border: none;
+    font-size: 12px;
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  div.root {
+    padding: 0 48px;
+  }
+
+  h1.form-title {
+    font-size: 24px !important;
+  }
+}

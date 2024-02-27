@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>URL Shortener</title>
+  </head>
+  <body>
+    <div class="root">
+      <header>
+        <nav class="navbar">
+          <img class="navbar-brand" src="/icons/logo.png" alt="URL Shortener" />
+        </nav>
+      </header>
+      <div class="container">
+        <h1 class="form-title">URL Shortener</h1>
+        <div class="form">
+          <div class="input-box">
+            <div class="input-url">
+              <label for="input-url"> URL </label>
+              <img class="link-icon" src="/icons/link.svg" alt="link" />
+              <input type="text" name="input-url" id="input-url" />
+
+              <img class="close-icon" src="/icons/close.svg" alt="close" />
+            </div>
+            <span class="error">Please enter a valid address</span>
+
+            <div class="input-url output">
+              <span class="target-link-title">Short URL</span>
+              <div class="target-link"></div>
+              <div class="copy-icon-box">
+                <img class="copy-icon" src="/icons/copy.svg" alt="cut" />
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-submit" name="btn-submit" id="btn-submit">
+            <span class="cut">Shorten URL</span>
+            <img class="submit-icon" src="/icons/hand.svg" alt="cut" />
+          </div>
+
+          <div class="sm-target-link-container">
+            <span class="target-link-title">Short URL</span>
+            <div class="input-url sm-output-url">
+              <div class="sm-target-link"></div>
+              <div class="sm-copy-icon-box">
+                <img class="copy-icon" src="/icons/copy.svg" alt="cut" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>

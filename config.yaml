@@ -10,8 +10,8 @@ server:
     rate: 10
     burst: 30
     expires_in: 3m
-  
-# public_dir: /http/public # optional
+
+public_dir: /url-shortener/public # optional
 
 data: /url-shortener/data
 
